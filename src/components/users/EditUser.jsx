@@ -39,9 +39,9 @@ const AddUser = () => {
   return (
     <div className="container">
       <div className="w-75 mx-auto shadow p-5">
-        <h2 className="text-center mb-4">Edit User Data</h2>
+        <h2 className="text-center m-4">Edit User Data</h2>
         <form onSubmit={(e) => onSubmit(e)}>
-          <div className="form-group">
+          <div className="form-group my-2">
           <input
               type="text"
               className="form-control form-control-lg"
@@ -51,7 +51,7 @@ const AddUser = () => {
               onChange={(e) => onInputChange(e)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group my-2">
             <input
               type="text"
               className="form-control form-control-lg"
@@ -61,7 +61,7 @@ const AddUser = () => {
               onChange={(e) => onInputChange(e)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group my-2">
             <input
               type="department"
               className="form-control form-control-lg"
@@ -71,7 +71,7 @@ const AddUser = () => {
               onChange={(e) => onInputChange(e)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group my-2">
             <input
               type="text"
               className="form-control form-control-lg"
@@ -81,7 +81,7 @@ const AddUser = () => {
               onChange={(e) => onInputChange(e)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group my-2">
             <input
               type="text"
               className="form-control form-control-lg"
@@ -91,7 +91,7 @@ const AddUser = () => {
               onChange={(e) => onInputChange(e)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group my-2">
             <input
               type="text"
               className="form-control form-control-lg"
@@ -102,7 +102,7 @@ const AddUser = () => {
             />
           </div>
           
-          <button type="submit" className="btn btn-primary btn-block">
+          <button type="submit" className="d-block mx-auto btn btn-primary btn-block">
             Edit User
           </button>
         </form>

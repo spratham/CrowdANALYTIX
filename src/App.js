@@ -10,6 +10,7 @@ import AddUser from "./components/users/AddUser";
 import DeleteUser from "./components/users/DeleteUser";
 import EditUser from "./components/users/EditUser";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import './index.css'
 function App() {
   return (
     <Router>
