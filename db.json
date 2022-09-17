@@ -31,7 +31,7 @@
     },
     {
       "id": 7,
-      "name": "Kurtis Weissnat",
+      "name": "Weissnat",
       "age": "25",
       "department": "Sales",
       "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
@@ -82,6 +82,15 @@
       "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
       "phone": "888723673",
       "id": 47
+    },
+    {
+      "name": "Pratham Singh",
+      "age": "21",
+      "department": "ME",
+      "blood": "A+",
+      "address": "980/5",
+      "phone": "7071728886",
+      "id": 48
     }
   ]
 }
