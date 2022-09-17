@@ -121,10 +121,10 @@ const Home = () => {
             </table>
 
             <nav aria-label="...">
-              <ul class="pagination pagination-md">
+              <ul className="pagination pagination-md">
                 {pages.map((page) => (
-                  <li class="page-item ">
-                    < button class="page-link" onClick={() => pagination(page)}>
+                  <li className="page-item ">
+                    < button className="page-link" onClick={() => pagination(page)}>
                       {page}
                     </button>
                   </li>
