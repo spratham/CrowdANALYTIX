@@ -6,7 +6,6 @@ import axios from "axios";
 
 const Home = () => {
   const [users, setUser] = useState([]);
-
   useEffect(() => {
     loadUsers();
   }, []);
@@ -20,8 +19,18 @@ const Home = () => {
       console.log("error");
     }
   };
+
+  // DELETE request using axios with async/await
+  const deleteUser = async (id) => {
+    await axios.delete(`http://localhost:3003/users/${id}`);
+
+    loadUsers();
+    alert("deleted");
+  };
+
   return (
     <div className="container">
+    
       <div className="py-4">
         <div className="heading">
           <h1>Home Page</h1>
@@ -58,8 +67,8 @@ const Home = () => {
             <th scope="col">Age</th>
             <th scope="col">Department</th>
             <th scope="col">Blood Group</th>
-            {/* <th scope="col">Address</th> */}
-            {/* <th scope="col">Contact No</th> */}
+            <th scope="col">Address</th>
+            <th scope="col">Contact No</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -71,7 +80,7 @@ const Home = () => {
               <td>{user.age}</td>
               <td>{user.department}</td>
               <td>{user.blood}</td>
-              {/* <td>
+              <td>
                 {user.address.street +
                   ", " +
                   user.address.suite +
@@ -79,109 +88,26 @@ const Home = () => {
                   user.address.city +
                   ", " +
                   user.address.zipcode}
-              </td> */}
-              {/* <td>{user.phone}</td> */}
+              </td>
+              <td>{user.phone}</td>
               <td>
-                <Link class="btn btn-primary mr-2" to={`/users/${user.id}`}>
-                  View
-                </Link>
                 <Link
-                  class="btn btn-outline-primary mr-2"
+                  class="btn btn-primary mr-2"
                   to={`/users/edit/${user.id}`}
                 >
                   Edit
                 </Link>
-                {/* <Link
+                <button
                   class="btn btn-danger"
                   onClick={() => deleteUser(user.id)}
                 >
                   Delete
-                </Link> */}
+                </button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
-      {/* <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table> */}
     </div>
   );
 };
