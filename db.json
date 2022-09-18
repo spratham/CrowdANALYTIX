@@ -17,7 +17,7 @@
       "age": "25",
       "department": "IT",
       "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
-      "phone": "(254)954-1289",
+      "phone": "796962139",
       "blood": "A+"
     },
     {
@@ -31,11 +31,11 @@
     },
     {
       "id": 8,
-      "name": "Nicholas Runolfsdottir V",
+      "name": "Pratham singh",
       "age": "25",
       "department": "HR",
-      "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
-      "phone": "586.493.6943 x140",
+      "address": "980/5, Rajiv vihar Naubasta",
+      "phone": "7071728886",
       "blood": "O-"
     },
     {
@@ -44,7 +44,7 @@
       "age": "25",
       "department": "Sales",
       "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
-      "phone": "(775)976-679",
+      "phone": "775976679",
       "blood": "AB-"
     },
     {
@@ -136,6 +136,24 @@
       "address": "123/2, kavita nagar , badshah market , lucknow",
       "phone": "6356291827",
       "id": 20
+    },
+    {
+      "name": "Jiwan Singh",
+      "age": "51",
+      "department": "Fitness",
+      "blood": "AB-",
+      "address": "2/B, D-block, Patalganj near Bijuri Road",
+      "phone": "9872635362",
+      "id": 21
+    },
+    {
+      "name": "Rocky Bhai",
+      "age": "31",
+      "department": "Music",
+      "blood": "O+",
+      "address": "KGF",
+      "phone": "7007007007",
+      "id": 22
     }
   ]
 }

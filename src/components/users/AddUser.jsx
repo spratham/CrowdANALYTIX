@@ -25,15 +25,6 @@ const AddUser = () => {
     await axios.post("http://localhost:3003/users", user); //Post location
     navigate("/");
   };
-  const handleEnter = (event) => {
-    if (event.key === "Enter") {
-      //Form auto submit on clicking "ENTER" at last input field
-      const form = document.getElementById("form");
-      const index = [...form].indexOf(event.target);
-      form.elements[index + 1].focus();
-      //event.preventDefault();
-    }
-  };
 
   return (
     <div>
@@ -73,7 +64,6 @@ const AddUser = () => {
 
             <div className="form-group my-2">
               <input
-               
                 type="number"
                 className="form-control form-control-lg"
                 placeholder="Enter age"
@@ -118,17 +108,17 @@ const AddUser = () => {
 
             <div className="form-group my-2">
               <input
-              onKeyPress={(event) => {
-                if (!/[0-9]/.test(event.key)) {
-                  event.preventDefault();
-                }}}
+                onKeyPress={(event) => {
+                  if (!/[0-9]/.test(event.key)) {
+                    event.preventDefault();
+                  }
+                }}
                 type="tel"
                 className="form-control form-control-lg"
                 placeholder="Enter Contact No "
                 name="phone"
                 value={phone}
                 onChange={(e) => onInputChange(e)}
-                onkeydown={handleEnter}
               />
             </div>
 

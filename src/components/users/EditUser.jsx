@@ -114,14 +114,12 @@ const EditUser = () => {
             </div>
 
             <div className="form-group my-2">
-              <input
-                onKeyPress={(event) => {
-                  if (!/[0-9]/.test(event.key)) {
-                    event.preventDefault();
-                  }
-                }}
-                maxlength="10"
-                type="number"
+            <input
+              onKeyPress={(event) => {
+                if (!/[0-9]/.test(event.key)) {
+                  event.preventDefault();
+                }}}
+                type="tel"
                 className="form-control form-control-lg"
                 placeholder="Enter Contact No "
                 name="phone"

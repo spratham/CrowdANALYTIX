@@ -45,45 +45,32 @@ const Home = () => {
   };
   return (
     <div>
-      {/* Breadcrumb Start */}
-
-      <nav className="breadcrumb-nav m-3" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <p>Home</p>
-          </li>
-        </ol>
-      </nav>
-
-      {/* Breadcrumb End */}
-
       <div className="container">
         <div className="py-4">
           <div className="heading">
             <h1>Home Page</h1>
-            <Link className="add-user" exact to="/users/add">
+            {/* <Link className="add-user" exact to="/users/add">
               ADD+
-            </Link>
+            </Link> */}
           </div>
 
           {/* table Start */}
-
           <table className="table table-success table-striped border shadow">
             <thead className="table-dark">
-              <tr style={{textAlign:"center"}}>
+              <tr style={{ textAlign: "center" }}>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Age</th>
                 <th scope="col">Department</th>
                 <th scope="col">Blood Grp</th>
-                <th  scope="col">Address</th>
+                <th scope="col">Address</th>
                 <th scope="col">Contact No</th>
                 <th scope="col">Actions</th>
               </tr>
             </thead>
             <tbody className="table-group-divider">
               {paginateUsers?.map((user, index) => (
-                <tr style={{textAlign:"center"}}>
+                <tr style={{ textAlign: "center" }}>
                   <th scope="row">{user.id}</th>
                   {/* <td>{user.id}</td> */}
 
@@ -117,7 +104,6 @@ const Home = () => {
           <nav aria-label="...">
             <ul className="pagination pagination-md pagination justify-content-center">
               {pages.map((page) => (
-                // <li className="page-item ">
                 <li
                   className={
                     page == currentPage ? "page-item active" : "page-item" // Highlighting current page no.

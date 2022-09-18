@@ -13,7 +13,7 @@ const About = () => {
             </Link>
           </li>
           <li className="breadcrumb-item " aria-current="page">
-            Edit User
+            About Us
           </li>
         </ol>
       </nav>

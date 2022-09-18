@@ -12,7 +12,7 @@ import EditUser from "./components/users/EditUser";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './index.css'
 function App() {
-  return (
+  return (<>
     <Router>
       <div className="App">
         <Navbar />
@@ -27,6 +27,8 @@ function App() {
         </Routes>
       </div>
     </Router>
+ 
+    </>
   );
 }
 
