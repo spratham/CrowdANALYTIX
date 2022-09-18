@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Leanne Graham",
+      "name": "Jenni Graham",
       "age": "25",
       "department": "Marketing",
       "address": "Victor Plains Suite 87  Wisokyburgh 90566-7771",
@@ -19,15 +19,6 @@
       "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
       "phone": "(254)954-1289",
       "blood": "A+"
-    },
-    {
-      "id": 6,
-      "name": "Mrs. Dennis Schulist",
-      "age": "25",
-      "department": "HR",
-      "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
-      "phone": "1-477-935-8478 x6430",
-      "blood": "B+"
     },
     {
       "id": 7,
@@ -100,6 +91,51 @@
       "address": "jayaraj  Muradnagar, Uttar Pradesh 201206, India",
       "phone": "9918373645",
       "id": 14
+    },
+    {
+      "name": "Butler shaw",
+      "age": "35",
+      "department": "Sales",
+      "blood": "B+",
+      "address": "Plot no.4, radheshyam vihar, ghaziabad",
+      "phone": "9616279158",
+      "id": 15
+    },
+    {
+      "name": "Poonam",
+      "age": "50",
+      "department": "Investments",
+      "blood": "AB+",
+      "address": "980/5, Rajiv vihar Naubasta",
+      "phone": "9616279158",
+      "id": 16
+    },
+    {
+      "name": "Uffan",
+      "age": "34",
+      "department": "Marketing",
+      "blood": "A+",
+      "address": "980/5, Rajiv vihar, naubasta",
+      "phone": "7071728886",
+      "id": 17
+    },
+    {
+      "name": "Chalsi rose",
+      "age": "19",
+      "department": "HR",
+      "blood": "A+",
+      "address": "109-B, vishal nagar, Delhi, 298001",
+      "phone": "9919653451",
+      "id": 19
+    },
+    {
+      "name": "Ankit Shukla",
+      "age": "29",
+      "department": "Security",
+      "blood": "B-",
+      "address": "123/2, kavita nagar , badshah market , lucknow",
+      "phone": "6356291827",
+      "id": 20
     }
   ]
 }

@@ -1,30 +1,30 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className="sad">
     <nav className="navbar navbar-expand-lg navbar-dark bg-success">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/">
           EMS
-        </Link>
+        </NavLink>
        
         <div className="">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active"exact to="/">
+              <NavLink className="nav-link active"exact to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active"exact to="/about">
+              <NavLink className="nav-link active"exact to="/about">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active"exact to="/contact">
+              <NavLink className="nav-link active"exact to="/contact">
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
     {/* <nav className="navbar navbar-expand-lg navigation-wrap">
         <div className="container">
           <a className="navbar-brand" href="#"><img src="images/logo.png" /></a>
-          <Link
+          <NavLink
             className="navbar-toggler"
             type="Link"
             data-bs-toggle="collapse"
@@ -45,24 +45,24 @@ const Navbar = () => {
             aria-label="Toggle navigation"
           >
             <i className="fas fa-stream navbar-toggler-icon"></i>
-          </Link>
+          </NavLink>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-              <Link className="nav-link active"exact to="/">
+              <NavLink className="nav-link active"exact to="/">
                 Home
-              </Link>
+              </NavLink>
                 
               </li>
               <li className="nav-item">
-              <Link className="nav-link active"exact to="/about">
+              <NavLink className="nav-link active"exact to="/about">
                 About
-              </Link>
+              </NavLink>
               </li>
               <li className="nav-item">
-              <Link className="nav-link active"exact to="/contact">
+              <NavLink className="nav-link active"exact to="/contact">
                 Contact
-              </Link>
+              </NavLink>
               </li>
             
             </ul>
