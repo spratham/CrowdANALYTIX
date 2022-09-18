@@ -47,15 +47,15 @@ const Home = () => {
     <div>
       <div className="container">
         <div className="py-4">
-          <div className="heading">
-            <h1>Home Page</h1>
+          <div className="heading my-2">
+            <h1>Employee Data</h1>
             {/* <Link className="add-user" exact to="/users/add">
               ADD+
             </Link> */}
           </div>
 
           {/* table Start */}
-          <table className="table table-success table-striped border shadow">
+          <table className="table table-success table-striped border shadow ">
             <thead className="table-dark">
               <tr style={{ textAlign: "center" }}>
                 <th scope="col">#</th>
