@@ -2,6 +2,11 @@
 
 Employee Managment System
 
+# Front Page
+
+![Screenshot (58)](https://user-images.githubusercontent.com/47916358/190910387-9fcb760a-aca6-4108-a834-11a3c28d332e.png)
+
+
 ## Description
 
 * ReactJs Application
@@ -41,11 +46,10 @@ npm run start:dev
 
 ## Functionalities
 
-1- Responsive
-2- CRUD
-3- Proper Comments
-4- Clean Code
-5- Pagination
-6- Error Handeling
-7- API integration(Axios)
-etc
+* Responsive
+* CRUD
+* Proper Comments
+* Clean Code
+* Pagination
+* Error Handeling
+* API integration(Axios)
