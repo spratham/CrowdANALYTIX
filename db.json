@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "id": 5,
-      "name": "Chelsey Dietrich",
-      "age": "25",
-      "department": "IT",
-      "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
-      "phone": "796962139",
-      "blood": "A+"
-    },
-    {
       "id": 8,
       "name": "Pratham singh",
       "age": "25",
@@ -179,6 +170,15 @@
       "address": "London",
       "phone": "500545521",
       "id": 27
+    },
+    {
+      "name": "Suresh",
+      "age": "38",
+      "department": "HOD",
+      "blood": "B+",
+      "address": "Lucknow",
+      "phone": "9827463526",
+      "id": 28
     }
   ]
 }

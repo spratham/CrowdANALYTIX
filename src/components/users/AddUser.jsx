@@ -122,6 +122,7 @@ const AddUser = () => {
                 value={phone}
                 onChange={(e) => onInputChange(e)}
                 required
+                htmlFor
               />
             </div>
 
