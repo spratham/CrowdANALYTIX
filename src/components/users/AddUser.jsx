@@ -59,6 +59,7 @@ const AddUser = () => {
                 name="name"
                 value={name}
                 onChange={(e) => onInputChange(e)}
+                required
               />
             </div>
 
@@ -103,6 +104,7 @@ const AddUser = () => {
                 name="address"
                 value={address}
                 onChange={(e) => onInputChange(e)}
+                required
               />
             </div>
 
@@ -119,6 +121,7 @@ const AddUser = () => {
                 name="phone"
                 value={phone}
                 onChange={(e) => onInputChange(e)}
+                required
               />
             </div>
 

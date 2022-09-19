@@ -16,7 +16,7 @@ const Home = () => {
     try {
       const response = await axios.get("http://localhost:3003/users");
       console.log(response);
-      setUser(response.data); //using reverse to view new added user on top
+      setUser(response.data.reverse()); //using reverse to view new added user on top
       setPaginateUsers(_(response.data).slice(0).take(pageSize).value());
     } catch {
       console.log("error");
@@ -43,6 +43,7 @@ const Home = () => {
     const paginateUsers = _(users).slice(startIndex).take(pageSize).value();
     setPaginateUsers(paginateUsers);
   };
+
   return (
     <div>
       <div className="container">
@@ -58,7 +59,7 @@ const Home = () => {
           <table className="table table-success table-striped border shadow ">
             <thead className="table-dark">
               <tr style={{ textAlign: "center" }}>
-                <th scope="col">#</th>
+                {/* <th scope="col">#</th> */}
                 <th scope="col">Name</th>
                 <th scope="col">Age</th>
                 <th scope="col">Department</th>
@@ -71,9 +72,7 @@ const Home = () => {
             <tbody className="table-group-divider">
               {paginateUsers?.map((user, index) => (
                 <tr style={{ textAlign: "center" }}>
-                  <th scope="row">{user.id}</th>
-                  {/* <td>{user.id}</td> */}
-
+                  {/* <th scope="row">{index+1}</th> */}
                   <td>{user.name}</td>
                   <td>{user.age}</td>
                   <td>{user.department}</td>
@@ -106,7 +105,7 @@ const Home = () => {
               {pages.map((page) => (
                 <li
                   className={
-                    page == currentPage ? "page-item active" : "page-item" // Highlighting current page no.
+                    page === currentPage ? "page-item active" : "page-item" // Highlighting current page no.
                   }
                 >
                   <button

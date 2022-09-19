@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <diiv>
+    <>
       {/* Breadcrumb Start */}
       <nav className="breadcrumb-nav m-3" aria-label="breadcrumb">
         <ol className="breadcrumb">
@@ -31,7 +31,7 @@ const About = () => {
           dolorum asperiores ullam, voluptatum omnis sunt saepe totam.
         </p>
       </div>
-    </diiv>
+    </>
   );
 };
 

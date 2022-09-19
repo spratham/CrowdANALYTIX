@@ -1,17 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Jenni Graham",
-      "age": "25",
-      "department": "Marketing",
-      "address": "Victor Plains Suite 87  Wisokyburgh 90566-7771",
-      "phone": [
-        "9919248918"
-      ],
-      "blood": "A+"
-    },
-    {
       "id": 5,
       "name": "Chelsey Dietrich",
       "age": "25",
@@ -19,15 +8,6 @@
       "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
       "phone": "796962139",
       "blood": "A+"
-    },
-    {
-      "id": 7,
-      "name": "Weissnat",
-      "age": "25",
-      "department": "Sales",
-      "address": "Shakti Nivas, Station Road, Besides Prashant Hotel, Goregaon (west)",
-      "phone": "210.067.6132",
-      "blood": "B+"
     },
     {
       "id": 8,
@@ -149,11 +129,56 @@
     {
       "name": "Rocky Bhai",
       "age": "31",
-      "department": "Music",
+      "department": "Staff",
       "blood": "O+",
       "address": "KGF",
       "phone": "7007007007",
       "id": 22
+    },
+    {
+      "name": "Rahul gupta",
+      "age": "21",
+      "department": "CSE",
+      "blood": "B+",
+      "address": "Nagavara Banglore",
+      "phone": "6736547837",
+      "id": 23
+    },
+    {
+      "name": "Yushuf",
+      "age": "34",
+      "department": "IT",
+      "blood": "B+",
+      "address": "A-8, B-Block, sarrafa market, delhi",
+      "phone": "9982763525",
+      "id": 24
+    },
+    {
+      "name": "Vikas",
+      "age": "24",
+      "department": "DS",
+      "blood": "O+",
+      "address": "Agra",
+      "phone": "9919256735",
+      "id": 25
+    },
+    {
+      "name": "Mayank",
+      "age": "23",
+      "department": "CSE",
+      "blood": "A+",
+      "address": "Etawah",
+      "phone": "8825453617",
+      "id": 26
+    },
+    {
+      "name": "Dr. Moosh",
+      "age": "48",
+      "department": "Teaching",
+      "blood": "AB+",
+      "address": "London",
+      "phone": "500545521",
+      "id": 27
     }
   ]
 }

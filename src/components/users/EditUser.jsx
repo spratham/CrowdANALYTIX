@@ -66,6 +66,7 @@ const EditUser = () => {
                 name="name"
                 value={name}
                 onChange={(e) => onInputChange(e)}
+                required
               />
             </div>
 
@@ -110,6 +111,7 @@ const EditUser = () => {
                 name="address"
                 value={address}
                 onChange={(e) => onInputChange(e)}
+                required
               />
             </div>
 
@@ -125,6 +127,7 @@ const EditUser = () => {
                 name="phone"
                 value={phone}
                 onChange={(e) => onInputChange(e)}
+                required
               />
             </div>
 
